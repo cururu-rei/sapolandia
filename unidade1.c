@@ -108,8 +108,59 @@ void q14(){
     area = base * altura;
     printf("A área do retângulo é: %d\n", area); 
 }
+void q15 (){
+    printf("questao 15\n");
+    printf("digite o valor do produto: ");
+    float preco;
+    scanf("%f", &preco);
+    printf("digite a porcentagem do desconto: ");
+    float desconto;
+    scanf("%f", &desconto);
+    printf("seu valor com desconto e: %.f\n", preco - (preco * desconto) * 0.01);
 
-
+}
+void q16 (){
+    printf("questao 16\n");
+    printf("digite o valor do seu salario: ");
+    float salario;
+    scanf ("%f", &salario);
+    printf("digite a porcentagem de aumento do salario: ");
+    float aumento;
+    scanf("%f", &aumento);
+    printf("seu novo salario e de: %.f\n", salario + (salario * aumento) * 0.01);
+}
+void q17(){
+    printf("questao 17\n");
+    printf("digite a temperatura em graus centigrados: ");
+    float temperatura;
+    scanf("%f", &temperatura);
+    printf("a sua temperatura convertida para fahrenheint e: %.f\n", (9 * temperatura + 160) / 5.0);
+}
+void q18(){
+    printf("questao 18\n");
+    printf("digite o tempo de viagem em horas: ");
+    float tempo;
+    scanf("%f", &tempo);
+    printf("digite a sua velocidade media em km/h: ");
+    float velocidade;
+    scanf("%f", &velocidade);
+    printf("seu consumo de combustivel foi de: %.f\n", (tempo * velocidade) / 12);
+}
+void q19(){
+    printf ("questao19 \n");
+            printf (" informe  a prestaçao vencida ");
+            float prestacao;
+            scanf ("%f", &prestacao);
+            printf(" informe a taxa de juros");
+            float taxa;
+            scanf ("%f", &taxa);
+            printf (" informe o periodo de atraso");
+            float atraso;
+            scanf ("%f", &atraso);
+            float juros = prestacao*taxa/100*atraso;
+            printf(" o valor da prestaçao com juros e: %.2f\n", prestacao+juros);
+           }
+}
 int main() {
     q1();           
     q2();
@@ -125,5 +176,10 @@ int main() {
     q12();
     q13();
     q14();
+    q15();
+    q16();
+    q17();
+    q18();
+    q19();
     return 0;
 }
